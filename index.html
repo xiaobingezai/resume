@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper" id="zhengTi">
+        <div id="head">
+            <div class="zhaoPian"></div>
+            <div class="jiaoYuBeiJing">
+                <div class="zhuangShiTuPian"><samp>教育背景</samp></div>
+                <div class="samp1">
+                    <samp>2018.09~2021.06</samp><samp>武汉光谷职业学院</samp><samp>移动应用技术</samp><samp>大专</samp>
+                </div>
+                <p>主修课程：HTML、Java、Vue.js、MYSQL数据库系统、Android网络通讯开发、物联网技术概论、UML与软件工程等</p>
+            </div>
+        </div>
+        <div id="content" class="clearfix">
+            <div class="gongZuoJingLi1">
+                <div class="first">
+                    <h1>蔡彬彬</h1>
+                    <p>应聘岗位：网页前端</p>
+                </div>
+                <div class="second">
+                    <div class="zhuangShiTuPian"><samp>个人信息</samp></div>
+                    <ul class="ul1">
+                        <li>籍贯：湖北黄冈</li>
+                        <li>出生年月：1999年7月</li>
+                        <li>政治面貌：共青团员</li>
+                        <li>现居居地：广州</li>
+                    </ul>
+                </div>
+                <div class="third">
+                    <div class="zhuangShiTuPian"><samp>个人信息</samp></div>
+                    <ul class="ul2">
+                        <li>176-0000-0000</li>
+                        <li>2810325884@qq.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="gongZuoJingLi">
+                <div class="zhuangShiTuPian"><samp>工作经历</samp></div>
+                <ul class="gongZuoJingLi1">
+                    <samp>2019.07~2020.08</samp><samp>“校园公众号”项目</samp><samp>管理和运营</samp>
+                    <li>使用官方的微信公众号来根据学校征集整理的资料来进行管理和发布更多的校园内容。</li>
+                    <li>根据收集的内容来进行编撰和内容的布局排版</li>
+                </ul>
+                <ul class="gongZuoJingLi2">
+                    <samp>2021.03~2022.03 </samp><samp>武汉绿软科技有限公司</samp><samp>网站编辑</samp>
+                    <li>通过百度等统计工具来获取到网络中用户需要的关键词</li>
+                    <li>使用最新得到的关键词来去百度采集，获得其内容和图片等素材。</li>
+                    <li>根据自己获得的素材等内容来进行网页的大致编辑，通过网站的端口来进行传递数据，讲自己所获得的关键词、内容、图片等制作好网页。</li>
+                    <li>通过服务器的链接的工具将素材的内容进行传输，在制作好网页的内容之后就将自己制作的网页提交给百度、谷歌、360等进行收录，让用户们可以在相应的搜索引擎搜索到自己制作的网页内容。</li>
+                </ul>
+            </div>
+        </div>
+        <div id="tail" class="clearfix">
+            <div class="diBu1">
+                <div class="zhuangShiTuPian"><samp>自我评价</samp></div>
+                <ul>
+                    <li>在校期间曾担任校学生会学习部长和班级的学习委员，使我的组织能力、领导能力和集体协作能力都有高效的提升。</li>
+                    <li>在公司的项目训练之中得到了很多的css+html+js的大量训练，很好的的掌握css盒子的各种布局效果，连同js的使用的技巧，像常见的网页轮播图和倒计时的效果实现都可以做到。</li>
+                    <li>在公司参与的项目的地址：<a href="http://www.downyi.com/downinfo/366391.html" target="blank">点击前往</a></li>
+                </ul>
+            </div>
+            <div class="diBu2">
+                <div class="zhuangShiTuPian"><samp>获得荣誉</samp></div>
+                <ul>
+                    <li>2018年获得学校2018级新生二等奖学金</li>
+                    <li>2018—2019年两次获得优秀学生干部</li>
+                    <li>2019年参加技能人才考试通过获得Android应用软件开发证书</li>
+                    <li>2019年参加学院第四期入党积极分子培训班并获得了结业证书</li>
+                    <li>2021年以优秀毕业生毕业</li>
+                </ul>
+            </div>
+        </div>
+        <div id="jianLi">
+            <p >网页版简历请前往：</p>
+            <div class="daoJiShi"></div>
+        </div>
+        
+        <script>
+            var daoJiShi = document.querySelector('.daoJiShi');
+            shiJian();
+            function shiJian() {
+                var time = new Date();
+                var nian = time.getFullYear();
+                var yue = time.getMonth();
+                var ri = time.getDate();
+                var h = time.getHours();
+                var m = time.getMinutes();
+                var s = time.getSeconds();
+                var dangQianShiJian = '现在是' + +nian + '年' + (yue + 1) + '月' + ri + '日' + h + '小时' + m + '分钟' + s + '秒' +
+                    '。';
+                daoJiShi.innerHTML = dangQianShiJian;
+            }
+            setInterval('shiJian()', 1000);
+        </script>
+    </div>
+
+</body>
+
+</html>
