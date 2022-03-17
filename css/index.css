@@ -103,14 +103,16 @@ input {
     width: 800px;
     height: 260px;
 }
-
+#head .zhaoPian img{
+    width: 100%;
+}
 /* 头部内容样式 */
 #head .zhaoPian {
     float: left;
     margin-left: 90px;
     width: 190px;
     height: 260px;
-    background-color: pink;
+    /* background-color: pink; */
 }
 
 #head .jiaoYuBeiJing {
@@ -306,4 +308,7 @@ input {
 #jianLi .daoJiShi {
     margin-top: 10px;
     margin-left: 30px;
+}
+#jianLi p a {
+    color: rgb(160, 13, 173);
 }
