@@ -117,7 +117,6 @@ body{
     display: block;
     width: 200px;
     height: 0;
-    font-size: 23px;
     padding-top: 12px;
     border-bottom: 26px solid #708090;
     border-right: 20px solid transparent;
@@ -181,52 +180,8 @@ body{
     display: flex;
     justify-content: space-between;
     font-weight: 800;
-    font-size: 15px;
+    font-size: 20px;
 }
-#zhengTi #head #content p {
-    font-size: 14px;
-}
-
-/* 个人能力 */
-#zhengTi #head #tail ul {
-    margin-top: 20px;
-}
-#zhengTi #head #tail ul li {
-    font-size: 14px;
-}
-#zhengTi #head #tail .zhuangShiTuPian div {
-    width: 780px;
-    border: 1px solid #708090;
-}
-
-/* 工作经历 */
-#zhengTi #head .gongZuoJingLi div:nth-child(2){
-    margin-top: 20px;
-    font-weight: 800;
-    display: flex;
-    justify-content: space-between;
-}
-#zhengTi #head .gongZuoJingLi li {
-    font-size: 14px;
-}
-
-/* 项目经验 */
-#zhengTi #head .xiangMuJingYan .bianJu3 {
-    margin-top: 20px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div {
-    margin-top: 10px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div p {
-    font-size: 14px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div li {
-    margin-left: 20px;
-    list-style-type: decimal;
-}
-#zhengTi #head .xian1 {
-    width: 780px;
-    border-top: 1px solid #708090;
-    margin-top: 10px;
-    margin-bottom: 10px;
+#zhengTi #head #content p:nth-child(n+1) {
+    font-size: 6px;
 }

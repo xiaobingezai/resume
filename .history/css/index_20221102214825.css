@@ -1,0 +1,166 @@
+/* 清除默认样式的代码 */
+/* 去除常见标签默认的 margin 和 padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+/* 內减模式 */
+* {
+    box-sizing: border-box;
+}
+
+/* 设置网页统一的字体大小、行高、字体系列相关属性 */
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei",
+        "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+}
+
+/* 去除列表默认样式 */
+ul,
+ol {
+    list-style: none;
+}
+
+/* 去除默认的倾斜效果 */
+em,
+i {
+    font-style: normal;
+}
+
+/* 去除a标签默认下划线，并设置默认文字颜色 */
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* 设置img的垂直对齐方式为居中对齐，去除img默认下间隙 */
+img {
+    vertical-align: middle;
+}
+
+/* 去除input默认样式 */
+input {
+    border: none;
+    outline: none;
+    color: #333;
+}
+
+/* 左浮动 */
+.fl {
+    float: left;
+}
+
+/* 右浮动 */
+.fr {
+    float: right;
+}
+
+/* 双伪元素清除法 */
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+/* 版心居中 */
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+/* 网页的整体外框 */
+#zhengTi {
+    width: 1000px;
+    /* height: 1400px; */
+    background-color: #fff;
+}
+
+body{
+    background-color: rgba(128, 128,128);
+}
+/* 装饰横条背景 */
+.zhuangShiTuPian {
+    position: relative;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    color: #fff;
+    width: 550px;
+    height: 40px;
+    border-bottom: 2px solid #2d74b5;
+}
+.zhuangShiTuPian::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+
+    width: 0;
+    height: 0;
+    border-width: 0 26px 12px 0;
+    border-style: solid;
+    border-color: transparent aqua;
+}
+.zhuangShiTuPian samp {
+    display: block;
+    width: 200px;
+    height: 0;
+    border-bottom: 38px solid rebeccapurple;
+    border-right: 50px solid transparent;
+}
+
+/* 最外层的盒子的样式设置 */
+#zhengTi {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 28px solid #517987 ;
+    border-bottom: 28px solid #517987 ;
+}
+#zhengTi::before {
+    content: '';
+    width: 260px;
+    height: 28px;
+    position: relative;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 30px 20px 0 20px;
+    border-style: solid;
+    border-color: #517987 transparent transparent transparent;
+}
+#zhengTi .tiXing {
+    width: 260px;
+    height: 28px;
+    position: relative;
+    bottom: -884px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0px 20px 30px 20px;
+    border-style: solid;
+    border-color:  transparent transparent #517987 transparent;
+}
+
+/* head的区域 */
+#zhengTi .head {
+    padding-left: 30px;
+}

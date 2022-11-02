@@ -117,7 +117,6 @@ body{
     display: block;
     width: 200px;
     height: 0;
-    font-size: 23px;
     padding-top: 12px;
     border-bottom: 26px solid #708090;
     border-right: 20px solid transparent;
@@ -194,9 +193,8 @@ body{
 #zhengTi #head #tail ul li {
     font-size: 14px;
 }
-#zhengTi #head #tail .zhuangShiTuPian div {
-    width: 780px;
-    border: 1px solid #708090;
+#zhengTi #head #tail .zhuangShiTuPian span {
+    padding-top: 12px;
 }
 
 /* 工作经历 */

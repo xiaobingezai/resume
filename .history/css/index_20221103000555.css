@@ -95,10 +95,10 @@ body{
 .zhuangShiTuPian {
     position: relative;
     text-align: center;
-    line-height: 30px;
-    font-size: 20px;
+    line-height: 40px;
+    font-size: 25px;
     color: #fff;
-    width: 780px;
+    width: 550px;
     height: 40px;
     border-bottom: 2px solid #708090;
 }
@@ -106,7 +106,7 @@ body{
     content: '';
     position: absolute;
     left: 0px;
-    top: 40px;
+    bottom: -1px;
     width: 0;
     height: 0;
     border-width: 0 26px 12px 0;
@@ -117,8 +117,7 @@ body{
     display: block;
     width: 200px;
     height: 0;
-    font-size: 23px;
-    padding-top: 12px;
+    padding-top: 20px;
     border-bottom: 26px solid #708090;
     border-right: 20px solid transparent;
 }
@@ -149,7 +148,6 @@ body{
 /* head的区域 */
 #zhengTi #head {
     margin-left: 50px;
-    margin-right: 50px;
 }
 /* 个人信息 */
 #zhengTi #head .geRenXinXi {
@@ -169,64 +167,4 @@ body{
 }
 #zhengTi #head .geRenXinXi li div {
     flex: 1;
-}
-
-/* 教育背景 */
-#zhengTi #head #content {
-    margin-top: 20px;
-}
-#zhengTi #head #content .jiShu1 {
-    margin-top: 20px;
-    margin-bottom: 5px;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 800;
-    font-size: 15px;
-}
-#zhengTi #head #content p {
-    font-size: 14px;
-}
-
-/* 个人能力 */
-#zhengTi #head #tail ul {
-    margin-top: 20px;
-}
-#zhengTi #head #tail ul li {
-    font-size: 14px;
-}
-#zhengTi #head #tail .zhuangShiTuPian div {
-    width: 780px;
-    border: 1px solid #708090;
-}
-
-/* 工作经历 */
-#zhengTi #head .gongZuoJingLi div:nth-child(2){
-    margin-top: 20px;
-    font-weight: 800;
-    display: flex;
-    justify-content: space-between;
-}
-#zhengTi #head .gongZuoJingLi li {
-    font-size: 14px;
-}
-
-/* 项目经验 */
-#zhengTi #head .xiangMuJingYan .bianJu3 {
-    margin-top: 20px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div {
-    margin-top: 10px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div p {
-    font-size: 14px;
-}
-#zhengTi #head .xiangMuJingYan .bianJu3 div li {
-    margin-left: 20px;
-    list-style-type: decimal;
-}
-#zhengTi #head .xian1 {
-    width: 780px;
-    border-top: 1px solid #708090;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }

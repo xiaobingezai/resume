@@ -117,7 +117,6 @@ body{
     display: block;
     width: 200px;
     height: 0;
-    font-size: 23px;
     padding-top: 12px;
     border-bottom: 26px solid #708090;
     border-right: 20px solid transparent;
@@ -125,6 +124,7 @@ body{
 
 /* 最外层的盒子的样式设置 */
 #zhengTi {
+    padding-bottom: 20px;
     background-color: #fff;
     border-top: 28px solid #708090 ;
     border-bottom: 28px solid #708090 ;
@@ -194,10 +194,6 @@ body{
 #zhengTi #head #tail ul li {
     font-size: 14px;
 }
-#zhengTi #head #tail .zhuangShiTuPian div {
-    width: 780px;
-    border: 1px solid #708090;
-}
 
 /* 工作经历 */
 #zhengTi #head .gongZuoJingLi div:nth-child(2){
@@ -226,7 +222,5 @@ body{
 }
 #zhengTi #head .xian1 {
     width: 780px;
-    border-top: 1px solid #708090;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    border-bottom: 1px solid #708090;
 }
